@@ -37,29 +37,26 @@ const plus = digits.map(function(Plus){
 console.log(plus);
 
 
-// 
-// const newLine = digits.map(function(newElement, index, array){
-//     console.log(newElement,index, array);
-// })
-// or 
-// const newLine2 = digits.map(x => x*x);
+//////////////////////////////////////////////////
+const newLine = digits.map(function(newElement, index, array){
+    console.log(newElement,index, array);
+})
+or 
+const newLine2 = digits.map(x => x*x); // output ------> error
 
 
 
-// 2 shortcut way
-// const square = elementThree => elementThree * elementThree;
-// const square = x => x*x ;
+2 shortcut way
+const square = elementThree => elementThree * elementThree;
+const square = x => x*x ;     //outPut -------------> error
 
 
 ////////////////////////////////////
-
 const element4 = digits.map(x => x*x);
 console.log(element4);
 
 
 //////////////////////////////////////
-
-
 const element5 = digits.map(x => x+x);
 console.log(element5);
 
