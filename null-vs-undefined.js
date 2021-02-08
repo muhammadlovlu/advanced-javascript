@@ -31,3 +31,4 @@ console.log(RusselDetails.phone); // output > udefined no "Phone property"
 console.log(RusselDetails.country);
 console.log(RusselDetails.city);
 console.log(RusselDetails.wife) //output > undefined "no Property added"
+
