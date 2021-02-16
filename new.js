@@ -44,3 +44,4 @@ console.log("NeighbourTwo",neighbourTwo);
 
 const neighbourThree = new Details ("Hammad", "Clark", "Nisa" ,5, 30000, "Yes", 1, 1200, 7000);
 console.log("NeighbourThree",neighbourThree)
+
