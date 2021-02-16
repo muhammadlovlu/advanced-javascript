@@ -17,13 +17,13 @@ const person = {                       //an object
 }
 person.chargeBill(50);          // withdraw 50 money
 person.chargeBill(4950);        // withdraw 4950 money
-console.log("Person's withdraw amount :",person.salary);
+console.log("Person's withdraw amount :", person.salary);
 
 person.addAmount(2000);     // deposit 2000 
-console.log("Person's Deposited :",person.salary); // current balance
+console.log("Person's Deposited :", person.salary); // current balance
 
 person.addAmount(8000);     // deposit 8000 
-console.log("Person's Deposit :",person.salary); // current balance
+console.log("Person's Deposit :", person.salary); // current balance
 
 
 
@@ -62,9 +62,9 @@ const forthPerson = {
     salary: 70000
 }
 const forthChargeBill = person.chargeBill.bind(forthPerson);
-console.log("Forth Person withdraw Amount :",forthChargeBill(5000));
+console.log("Forth Person withdraw Amount :", forthChargeBill(5000));
 const forthAddMoney = person.addAmount.bind(forthPerson);               // withdraw amount 5000
-console.log("Forth Person deposit Amount :",forthAddMoney(15000));    // deposit amount 15000
+console.log("Forth Person deposit Amount :", forthAddMoney(15000));    // deposit amount 15000
 
 
 // fifthPerson example for call method
@@ -76,6 +76,20 @@ const fifthPerson = {
 }
 
 person.chargeBill.call(fifthPerson, 2000);
-console.log("Fifth Person's charges :",fifthPerson.salary);
-person.addAmount.call(fifthPerson,12000);
-console.log("Fifth Person's Deposit :",fifthPerson.salary);
+console.log("Fifth Person's charges :", fifthPerson.salary);
+person.addAmount.call(fifthPerson, 12000);
+console.log("Fifth Person's Deposit :", fifthPerson.salary);
+
+
+// sixthPerson example for apply method
+const sixthPerson = {
+    firstName: 'Jon',
+    lastName: 'Brandson',
+    favFood: 'Hotdog',
+    salary: 120000
+}
+
+person.chargeBill.apply(sixthPerson, [40000]);               // withdraw amount 40000
+console.log("Sixth Person's charges :", sixthPerson.salary);
+person.addAmount.apply(sixthPerson, [3000])  // deposit amount 3000
+console.log("Sixth Person's Deposit :", sixthPerson.salary);
